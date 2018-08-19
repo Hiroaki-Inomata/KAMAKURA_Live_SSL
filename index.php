@@ -145,7 +145,7 @@ a.pay {
 							</li>
 							<li><a href="25th/dr_role_find.php">Find My Role <i class="glyphicon glyphicon-search"></i></a>
 							</li>
-							<li><a href="25th/comecome2018/2018comecome.pdf">コメコメ演題募集</a>
+							<li><a href="25th/comecome2018/2018comecome .pdf">コメコメ演題募集</a>
 							</li>
 							<li><a class="btn btn-primary" role="button" id="openProgram">このページ</a>
 							</li>
@@ -352,7 +352,7 @@ a.pay {
 				<div class="col-sm-12">
 					<div class="input-group"></div><a class="btn btn-default btn-sm" role="button" href="#">事前登録締</a> <a class="btn btn-primary btn-sm" role="button" href="25th/dr_role_find.php">私のお仕事 <i class="glyphicon glyphicon-search"></i></a> <a class="btn btn-success  btn-sm openMidokoro" role="button">今年の見どころ　見てね! &raquo;</a> <a class="btn btn-danger btn-sm pay" role="button" href="25th/2018FinalPDFProgram/2018FinalProgram.pdf">最終プログラムPDF</a>
 					<a class="btn btn-info btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">コメコメ演題受付中</a>
-					<a class="btn btn-warning btn-sm" role="button" href="25th/comecome2018/2018ComeCome_plan2018_09_07.pdf">コメコメプログラム概要</a>
+					<a class="btn btn-warning btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">コメコメプログラム概要</a>
 				</div>
 			</div>
 		</div>
