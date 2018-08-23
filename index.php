@@ -313,36 +313,36 @@ a.pay {
 
 	<div class="container">
 		<div id="j-introduction">
-			<h5 class="title">2018年12月開催<span class="red_bold_sm"> 最終更新: <? $latest = '2018/DEC/09'; ?>
+			<h5 class="title">2018年12月開催<span class="red_bold_sm"> 最終更新: <? $latest = '2018/AUG/20'; ?>
       <?= $latest ?>
       </span></h5>
 			<h3 class="title">鎌倉ライブ2018 <a class="btn btn-primary btn-sm eng" role="button">English</a> CVIT専門医認定医更新点数2点</h3>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="input-group">
-						<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read.php ">TRIライブ(09日)</a>
-						<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">インタベ座学(09日)</a>
+						<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read.php ">TRIライブ(15日)</a>
+						<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">インタベ座学(15日)</a>
 						<a class="btn btn-primary btn-sm" role="button" href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
-						<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read.php#day2">TRIライブ(10日)</a>
-						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">コメコメ(10日)</a>
+						<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read.php#day2">TRIライブ(16日)</a>
+						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">コメコメ(16日)</a>
 						<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター</a>
 					</div>
 				</div>
 				<div class="col-lg-10 back-sky-blue">
-					<p> 今年も毎年恒例の鎌倉ライブデモンストレーション・コースが開催される時となりました。本年はこれまで続けてきた　治験/臨床試験に関する セッションは一旦お休みさせて頂きます。その分　今年は新たなディバイスである OASがいよいよ臨床使用開始となります。今年は若手医師とコメディカルを対象としたインターベンション座学を併設します:
+					<p> 今年も毎年恒例の鎌倉ライブデモンストレーション・コースが開催される時となりました。本年はこれまで続けてきた　治験/臨床試験に関する セッションは昨年に続いてお休みさせて頂きます。しかしながら、これらの活動の成果でもある新たなディバイス OAS (Coronary Orbital Atherectomy System - DiamondBack360)が本格的に臨床使用されるようになっています。今年も昨年好評であった若手医師とコメディカルを対象としたインターベンション座学を併設します:
 					</p>
 					<p><img src="25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
 					</p>
 					<ol>
-						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (09th - DEC)</a> &nbsp;
-							<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2 ">TRI Live (10th - DEC)</a>
+						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (15th - DEC)</a> &nbsp;
+							<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2 ">TRI Live (16th - DEC)</a>
 						</li>
-						<li>インターベンション座学&nbsp;&nbsp;<a class="btn btn-default btn-sm" role="button" href="25th/db_read/zagaku_all_read.php ">インターベンション座学(09日)</a>
+						<li>インターベンション座学&nbsp;&nbsp;<a class="btn btn-default btn-sm" role="button" href="25th/db_read/zagaku_all_read.php ">インターベンション座学(15日)</a>
 						</li>
-						<li>コメディカル・セッション&nbsp;&nbsp;<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read1.php">コメディカル・セッション(10日)</a> &nbsp;&nbsp;
+						<li>コメディカル・セッション&nbsp;&nbsp;<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read1.php">コメディカル・セッション(16日)</a> &nbsp;&nbsp;
 							<a class="btn btn-danger btn-lg pay" role="button" href="25th/2018FinalPDFProgram/2018FinalProgram.pdf">最終プログラム</a>
 						</li>
-						<li>OCT/FFRトレーニングセンター&nbsp;&nbsp;<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター (09日、10日)</a>
+						<li>OCT/FFRトレーニングセンター&nbsp;&nbsp;<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター (15日、16日)</a>
 						</li>
 					</ol>
 					<p>そして、今年はそれぞれのセッションの中で、皆で討議する点をより明確にしてこのコースを開催します。</p>
@@ -358,16 +358,16 @@ a.pay {
 		</div>
 
 		<div id="e-introduction">
-			<h5 class="title">December 2018<span class="red_bold_sm"> Last Update:<? $latest = '2018/DEC/09'; ?>
+			<h5 class="title">December 2018<span class="red_bold_sm"> Last Update:
       <?= $latest ?>
     </h5>
 			<h3 class="title">KAMAKURA LIVE 2018 <a class="btn btn-danger btn-sm jp" role="button" >日本語</a></h3>
 			<div class="row">
-				<div class="col-lg-12"> <a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (09th)</a>
-					<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">ZAGAKU (09th)</a>
+				<div class="col-lg-12"> <a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (15th)</a>
+					<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">ZAGAKU (15th)</a>
 					<a class="btn btn-primary btn-sm" role="button" href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
-					<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2">TRI Live (10th)</a>
-					<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">ComeCome (10th)</a>
+					<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2">TRI Live (16th)</a>
+					<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">ComeCome (16th)</a>
 					<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFR Traning Centger</a>
 				</div>
 				<div class="col-lg-10 back-faint-pink">
@@ -389,7 +389,7 @@ a.pay {
 					<a class="btn btn-info btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">Wait for Your Submission</a>
 					<a class="btn btn-warning btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">About ComeCome</a>
 				</div>
-			</div>##
+			</div>
 		</div>
 
 		<footer>
