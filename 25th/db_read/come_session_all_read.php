@@ -13,15 +13,16 @@ try {
 	die( $e->getMessage() );
 }
 
-$stmt = $pdo->prepare( "SELECT * FROM `session_tbls`WHERE `class` = 'com' AND `year` = '" . $this_year . "' ORDER BY `sessionNo` ASC;" );
+$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `class` = 'com' AND `year` = '" . $this_year . "' ORDER BY `sessionNo` ASC;" );
 $flag = $stmt->execute();
 $rows = $stmt->fetchAll( PDO::FETCH_ASSOC );
+
 if ( !$flag ) {
 	$infor = $stmt->errorInfo();
 	exit( $infor[ 2 ] );
 }
 
-$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls`;" );
+$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls2018`;" );
 $stmt->execute();
 $row_come = $stmt->fetch( PDO::FETCH_ASSOC );
 

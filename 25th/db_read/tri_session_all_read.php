@@ -13,15 +13,18 @@ try {
 	die( $e->getMessage() );
 }
 
-$stmt = $pdo->prepare( "SELECT * FROM `session_tbls`WHERE `class` = 'tri' AND `year` = '2017' ORDER BY `sessionNo` ASC;" );
+$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `class` = 'tri' AND `year` = '2017' ORDER BY `sessionNo` AND `id` > '185'ASC;" );
 $flag = $stmt->execute();
 $rows = $stmt->fetchAll( PDO::FETCH_ASSOC );
+print_r($rows[0]); echo "<br><br>";
+print_r($rows[1]); echo "<br><br>";
+print_r($rows[2]); echo "<br><br>"; 
 if ( !$flag ) {
 	$infor = $stmt->errorInfo();
 	exit( $infor[ 2 ] );
 }
 
-$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls`;" );
+$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls2018`;" );
 $stmt->execute();
 $row_come = $stmt->fetch( PDO::FETCH_ASSOC );
 
@@ -59,7 +62,8 @@ $class = 'tri';
 <?= $latest ?>
 </span>
 	<div class="container">
-		<h1 class="text-center text-danger">KAMAKURA TRI (12/09 SAT)</h1>
+		<h1 class="text-center text-danger">KAMAKURA TRI (12/15 SAT)</h1>
+		
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="session_title">
@@ -68,18 +72,18 @@ $class = 'tri';
 					</form>
 					<div>
 						<div class="fleft">&nbsp;
-							<?= _Q(mb_substr($rows[1]['begin'], 0, 5)); ?>
+							<?= _Q(mb_substr($rows[0]['begin'], 0, 5)); ?>
 							-
-							<?= date("H:i" , strtotime($rows[1]['begin']) + $rows[1]['duration']*60); ?>
+							<?= date("H:i" , strtotime($rows[0]['begin']) + $rows[0]['duration']*60); ?>
 						</div>
 						<div class="fright">
-							<?= _Q($rows[1]['sessionTitle']); ?>
+							<?= _Q($rows[0]['sessionTitle']); ?>
 						</div>
 						<div class="fclear">Session Co-Sponsor:
-							<?= _Q($rows[1]['cosponsor']); ?>
+							<?= _Q($rows[0]['cosponsor']); ?>
 						</div>
 						<div>Venue:
-							<?= _Q($rows[1]['venue']); ?>
+							<?= _Q($rows[0]['venue']); ?>
 						</div>
 					</div>
 					<div class="col-lg-10 session_sub">
@@ -88,12 +92,12 @@ $class = 'tri';
 								<button type="submit" class="subsession_button" name="sessionNo" value="2">Detail</button>
 							</form>
 							<div class="fleft">&nbsp;
-								<?= _Q(mb_substr($rows[2]['begin'], 0, 5)); ?>
+								<?= _Q(mb_substr($rows[1]['begin'], 0, 5)); ?>
 								-
-								<?= date("H:i" , strtotime($rows[2]['begin']) +$rows[2]['duration']*60); ?>
+								<?= date("H:i" , strtotime($rows[1]['begin']) +$rows[1]['duration']*60); ?>
 							</div>
 							<div class="fright">Session Subtitle:
-								<?= _Q($rows[2]['sessionTitle']); ?>
+								<?= _Q($rows[1]['sessionTitle']); ?>
 							</div>
 							<div class="fclear">Chair:
 								<?= _Q(makeTriList($pdo, 2, 1, $class, $this_year)); ?>
@@ -116,13 +120,13 @@ $class = 'tri';
 								<?= _Q(makeTriList($pdo, 3, 1, $class, $this_year)); ?>
 							</div>
 							<div>Title:
-								<?= _Q($rows[3]['lectureTitle']); ?>
+								<?= _Q($rows[2]['lectureTitle']); ?>
 							</div>
 							<div class="description">Description:
-								<?= _Q($rows[3]['description']); ?>
+								<?= _Q($rows[2]['description']); ?>
 							</div>
 							<div>Lecture Co-Sponsor:
-								<?= _Q($rows[3]['cosponsor']); ?>
+								<?= _Q($rows[2]['cosponsor']); ?>
 							</div>
 						</div>
 						<div class="subsession">
@@ -130,12 +134,12 @@ $class = 'tri';
 								<button type="submit" class="subsession_button" name="sessionNo" value="4">Detail</button>
 							</form>
 							<div class="fleft">&nbsp;
-								<?= _Q(mb_substr($rows[4]['begin'], 0, 5)); ?>
+								<?= _Q(mb_substr($rows[3]['begin'], 0, 5)); ?>
 								-
-								<?= date("H:i" , strtotime($rows[4]['begin']) +$rows[4]['duration']*60); ?>
+								<?= date("H:i" , strtotime($rows[3]['begin']) +$rows[3]['duration']*60); ?>
 							</div>
 							<div class="fright">Session Subtitle:
-								<?= _Q($rows[4]['sessionTitle']); ?>
+								<?= _Q($rows[3]['sessionTitle']); ?>
 							</div>
 							<div class="fclear">Chair:
 								<?= _Q(makeTriList($pdo, 4, 1, $class, $this_year)); ?>
@@ -162,14 +166,15 @@ $class = 'tri';
 						<?= _Q(makeTriList($pdo, 5, 1, $class, $this_year)); ?>
 					</div>
 					<div>Luncheon Title:
-						<?= _Q($rows[5]['lectureTitle']); ?>
-					</div><!--
+						<?= _Q($rows[4]['lectureTitle']); ?>
+					</div>
+					<!--
 					<div class="description">Description:
-						<?= _Q($rows[5]['description']); ?>
+						<?= _Q($rows[4]['description']); ?>
 					</div>
 					-->
 					<div>Lecture Co-Sponsor:
-						<?= _Q($rows[5]['cosponsor']); ?>
+						<?= _Q($rows[4]['cosponsor']); ?>
 					</div>
 				</div>
 
@@ -180,18 +185,18 @@ $class = 'tri';
 					</form>
 					<div>
 						<div class="fleft">&nbsp;
-							<?= _Q(mb_substr($rows[6]['begin'], 0, 5)); ?>
+							<?= _Q(mb_substr($rows[5]['begin'], 0, 5)); ?>
 							-
-							<?= date("H:i" , strtotime($rows[6]['begin']) + $rows[6]['duration']*60); ?>
+							<?= date("H:i" , strtotime($rows[5]['begin']) + $rows[5]['duration']*60); ?>
 						</div>
 						<div class="fright">
-							<?= _Q($rows[6]['sessionTitle']); ?>
+							<?= _Q($rows[5]['sessionTitle']); ?>
 						</div>
 						<div class="fclear">Session Co-Sponsor:
-							<?= _Q($rows[6]['cosponsor']); ?>
+							<?= _Q($rows[5]['cosponsor']); ?>
 						</div>
 						<div>Venue:
-							<?= _Q($rows[6]['venue']); ?>
+							<?= _Q($rows[5]['venue']); ?>
 						</div>
 					</div>
 
@@ -202,12 +207,12 @@ $class = 'tri';
 								</button>
 							</form>
 							<div class="fleft">&nbsp;
-								<?= _Q(mb_substr($rows[7]['begin'], 0, 5)); ?>
+								<?= _Q(mb_substr($rows[6]['begin'], 0, 5)); ?>
 								-
-								<?= date("H:i" , strtotime($rows[7]['begin']) +$rows[7]['duration']*60); ?>
+								<?= date("H:i" , strtotime($rows[6]['begin']) +$rows[6]['duration']*60); ?>
 							</div>
 							<div class="fright">Session Subtitle:
-								<?= _Q($rows[7]['sessionTitle']); ?>
+								<?= _Q($rows[6]['sessionTitle']); ?>
 							</div>
 							<div class="fclear">Chair:
 								<?= _Q(makeTriList($pdo,7, 1, $class, $this_year)); ?>
@@ -231,13 +236,13 @@ $class = 'tri';
 									<?= _Q(makeTriList($pdo, 8, 1, $class, $this_year)); ?>
 								</div>
 								<div>Title:
-									<?= _Q($rows[8]['lectureTitle']); ?>
+									<?= _Q($rows[7]['lectureTitle']); ?>
 								</div>
 								<div class="description">Description:
-									<?= _Q($rows[8]['description']); ?>
+									<?= _Q($rows[7]['description']); ?>
 								</div>
 								<div>Lecture Co-Sponsor:
-									<?= _Q($rows[8]['cosponsor']); ?>
+									<?= _Q($rows[7]['cosponsor']); ?>
 								</div>
 
 
@@ -248,12 +253,12 @@ $class = 'tri';
 								</button>
 								</form>
 								<div class="fleft">&nbsp;
-									<?= _Q(mb_substr($rows[9]['begin'], 0, 5)); ?>
+									<?= _Q(mb_substr($rows[8]['begin'], 0, 5)); ?>
 									-
-									<?= date("H:i" , strtotime($rows[9]['begin']) +$rows[9]['duration']*60); ?>
+									<?= date("H:i" , strtotime($rows[8]['begin']) +$rows[8]['duration']*60); ?>
 								</div>
 								<div class="fright">Session Subtitle:
-									<?= _Q($rows[9]['sessionTitle']); ?>
+									<?= _Q($rows[8]['sessionTitle']); ?>
 								</div>
 								<div class="fclear">Chair:
 									<?= _Q(makeTriList($pdo, 9, 1, $class, $this_year)); ?>
@@ -278,13 +283,13 @@ $class = 'tri';
 								<?= _Q(makeTriList($pdo, 10, 1, $class, $this_year)); ?>
 							</div>
 							<div>Title:
-								<?= _Q($rows[10]['lectureTitle']); ?>
+								<?= _Q($rows[9]['lectureTitle']); ?>
 							</div>
 							<div class="description">Description:
-								<?= _Q($rows[10]['description']); ?>
+								<?= _Q($rows[9]['description']); ?>
 							</div>
 							<div>Lecture Co-Sponsor:
-								<?= _Q($rows[10]['cosponsor']); ?>
+								<?= _Q($rows[9]['cosponsor']); ?>
 							</div>
 
 							<div class="subsession">
@@ -293,12 +298,12 @@ $class = 'tri';
 								</button>
 								</form>
 								<div class="fleft">&nbsp;
-									<?= _Q(mb_substr($rows[11]['begin'], 0, 5)); ?>
+									<?= _Q(mb_substr($rows[10]['begin'], 0, 5)); ?>
 									-
-									<?= date("H:i" , strtotime($rows[11]['begin']) +$rows[11]['duration']*60); ?>
+									<?= date("H:i" , strtotime($rows[10]['begin']) +$rows[10]['duration']*60); ?>
 								</div>
 								<div class="fright">Session Subtitle:
-									<?= _Q($rows[11]['sessionTitle']); ?>
+									<?= _Q($rows[10]['sessionTitle']); ?>
 								</div>
 								<div class="fclear">Chair:
 									<?= _Q(makeTriList($pdo,11, 1, $class, $this_year)); ?>
@@ -322,9 +327,9 @@ $class = 'tri';
 						</button>
 					</form>
 					<div class="fleft">&nbsp;
-									<?= _Q(mb_substr($rows[21]['begin'], 0, 5)); ?>
+									<?= _Q(mb_substr($rows[20]['begin'], 0, 5)); ?>
 									-
-									<?= date("H:i" , strtotime($rows[21]['begin']) +$rows[21]['duration']*60); ?>
+									<?= date("H:i" , strtotime($rows[20]['begin']) +$rows[20]['duration']*60); ?>
 								</div>
 					<div>Speaker:
 						<?= _Q(makeTriList($pdo, 21, 3, $class, $this_year)) ?>
@@ -333,23 +338,23 @@ $class = 'tri';
 						<?= _Q(makeTriList($pdo, 21, 1, $class, $this_year)); ?>
 					</div>
 					<div>Topic Title:
-						<?= _Q($rows[21]['lectureTitle']); ?>
+						<?= _Q($rows[20]['lectureTitle']); ?>
 					</div>
 					<div class="description">Description:
-						<?= _Q($rows[21]['description']); ?>
+						<?= _Q($rows[20]['description']); ?>
 					</div>
 		
 					<div>Lecture Co-Sponsor:
-						<?= _Q($rows[21]['cosponsor']); ?>
+						<?= _Q($rows[20]['cosponsor']); ?>
 					</div>
 				</div>		
 				
-			</div>
-		</div>
-	</div>
+			</div> <!-- col-lg-12 -->
+		</div> <!-- row -->
+	</div> <!-- container -->
 
 	<div class="container" id="day2">
-		<h1 class="text-center text-primary">KAMAKURA TRI (12/10 SUN)</h1>
+		<h1 class="text-center text-primary">KAMAKURA TRI (12/16 SUN)</h1>
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="session_title">
@@ -359,18 +364,18 @@ $class = 'tri';
 					</form>
 					<div>
 						<div class="fleft">&nbsp;
-							<?= _Q(mb_substr($rows[12]['begin'], 0, 5)); ?>
+							<?= _Q(mb_substr($rows[11]['begin'], 0, 5)); ?>
 							-
-							<?= date("H:i" , strtotime($rows[12]['begin']) + $rows[12]['duration']*60); ?>
+							<?= date("H:i" , strtotime($rows[11]['begin']) + $rows[11]['duration']*60); ?>
 						</div>
 						<div class="fright">
-							<?= _Q($rows[12]['sessionTitle']); ?>
+							<?= _Q($rows[11]['sessionTitle']); ?>
 						</div>
 						<div class="fclear">Session Co-Sponsor:
-							<?= _Q($rows[12]['cosponsor']); ?>
+							<?= _Q($rows[11]['cosponsor']); ?>
 						</div>
 						<div>Venue:
-							<?= _Q($rows[12]['venue']); ?>
+							<?= _Q($rows[11]['venue']); ?>
 						</div>
 					</div>
 
@@ -381,12 +386,12 @@ $class = 'tri';
 								</button>
 							</form>
 							<div class="fleft">&nbsp;
-								<?= _Q(mb_substr($rows[13]['begin'], 0, 5)); ?>
+								<?= _Q(mb_substr($rows[12]['begin'], 0, 5)); ?>
 								-
-								<?= date("H:i" , strtotime($rows[13]['begin']) +$rows[13]['duration']*60); ?>
+								<?= date("H:i" , strtotime($rows[12]['begin']) +$rows[12]['duration']*60); ?>
 							</div>
 							<div class="fright">Session Subtitle:
-								<?= _Q($rows[13]['sessionTitle']); ?>
+								<?= _Q($rows[12]['sessionTitle']); ?>
 							</div>
 							<div class="fclear">Chair:
 								<?= _Q(makeTriList($pdo, 13, 1, $class, $this_year)); ?>
@@ -410,13 +415,13 @@ $class = 'tri';
 									<?= _Q(makeTriList($pdo, 14, 1, $class, $this_year)); ?>
 								</div>
 								<div>Title:
-									<?= _Q($rows[14]['lectureTitle']); ?>
+									<?= _Q($rows[13]['lectureTitle']); ?>
 								</div>
 								<div class="description">Description:
-									<?= _Q($rows[14]['description']); ?>
+									<?= _Q($rows[13]['description']); ?>
 								</div>
 								<div>Lecture Co-Sponsor:
-									<?= _Q($rows[14]['cosponsor']); ?>
+									<?= _Q($rows[13]['cosponsor']); ?>
 								</div>
 
 							</div>
@@ -426,12 +431,12 @@ $class = 'tri';
 								</button>
 								</form>
 								<div class="fleft">&nbsp;
-									<?= _Q(mb_substr($rows[15]['begin'], 0, 5)); ?>
+									<?= _Q(mb_substr($rows[14]['begin'], 0, 5)); ?>
 									-
-									<?= date("H:i" , strtotime($rows[15]['begin']) +$rows[15]['duration']*60); ?>
+									<?= date("H:i" , strtotime($rows[14]['begin']) +$rows[14]['duration']*60); ?>
 								</div>
 								<div class="fright">Session Subtitle:
-									<?= _Q($rows[15]['sessionTitle']); ?>
+									<?= _Q($rows[14]['sessionTitle']); ?>
 								</div>
 								<div class="fclear">Chair:
 									<?= _Q(makeTriList($pdo, 15, 1, $class, $this_year)); ?>
@@ -460,13 +465,13 @@ $class = 'tri';
 						<?= _Q(makeTriList($pdo, 16, 1, $class, $this_year)); ?>
 					</div>
 					<div>Luncheon Title:
-						<?= _Q($rows[16]['lectureTitle']); ?>
+						<?= _Q($rows[15]['lectureTitle']); ?>
 					</div>
 					<div class="description">Description:
-						<?= _Q($rows[16]['description']); ?>
+						<?= _Q($rows[15]['description']); ?>
 					</div>
 					<div>Lecture Co-Sponsor:
-						<?= _Q($rows[16]['cosponsor']); ?>
+						<?= _Q($rows[15]['cosponsor']); ?>
 					</div>
 				</div>
 				<div class="session_title">
@@ -476,18 +481,18 @@ $class = 'tri';
 					</form>
 					<div>
 						<div class="fleft">&nbsp;
-							<?= _Q(mb_substr($rows[17]['begin'], 0, 5)); ?>
+							<?= _Q(mb_substr($rows[16]['begin'], 0, 5)); ?>
 							-
-							<?= date("H:i" , strtotime($rows[17]['begin']) + $rows[17]['duration']*60); ?>
+							<?= date("H:i" , strtotime($rows[16]['begin']) + $rows[16]['duration']*60); ?>
 						</div>
 						<div class="fright">
-							<?= _Q($rows[17]['sessionTitle']); ?>
+							<?= _Q($rows[16]['sessionTitle']); ?>
 						</div>
 						<div class="fclear">Session Co-Sponsor:
-							<?= _Q($rows[17]['cosponsor']); ?>
+							<?= _Q($rows[16]['cosponsor']); ?>
 						</div>
 						<div>Venue:
-							<?= _Q($rows[17]['venue']); ?>
+							<?= _Q($rows[16]['venue']); ?>
 						</div>
 					</div>
 					<div class="col-lg-10 session_sub">
@@ -497,12 +502,12 @@ $class = 'tri';
 								</button>
 							</form>
 							<div class="fleft">&nbsp;
-								<?= _Q(mb_substr($rows[18]['begin'], 0, 5)); ?>
+								<?= _Q(mb_substr($rows[17]['begin'], 0, 5)); ?>
 								-
-								<?= date("H:i" , strtotime($rows[18]['begin']) +$rows[18]['duration']*60); ?>
+								<?= date("H:i" , strtotime($rows[18]['begin']) +$rows[17]['duration']*60); ?>
 							</div>
 							<div class="fright">Session Subtitle:
-								<?= _Q($rows[18]['sessionTitle']); ?>
+								<?= _Q($rows[17]['sessionTitle']); ?>
 							</div>
 							<div class="fclear">Chair:
 								<?= _Q(makeTriList($pdo,18, 1, $class, $this_year)); ?>
@@ -525,13 +530,13 @@ $class = 'tri';
 									<?= _Q(makeTriList($pdo, 19, 1, $class, $this_year)); ?>
 								</div>
 								<div>Title:
-									<?= _Q($rows[19]['lectureTitle']); ?>
+									<?= _Q($rows[18]['lectureTitle']); ?>
 								</div>
 								<div class="description">Description:
-									<?= _Q($rows[19]['description']); ?>
+									<?= _Q($rows[18]['description']); ?>
 								</div>
 								<div>Lecture Co-Sponsor:
-									<?= _Q($rows[19]['cosponsor']); ?>
+									<?= _Q($rows[18]['cosponsor']); ?>
 								</div>
 							</div>
 							<div class="subsession">
@@ -540,12 +545,12 @@ $class = 'tri';
 								</button>
 								</form>
 								<div class="fleft">&nbsp;
-									<?= _Q(mb_substr($rows[20]['begin'], 0, 5)); ?>
+									<?= _Q(mb_substr($rows[19]['begin'], 0, 5)); ?>
 									-
-									<?= date("H:i" , strtotime($rows[20]['begin']) +$rows[20]['duration']*60); ?>
+									<?= date("H:i" , strtotime($rows[19]['begin']) +$rows[19]['duration']*60); ?>
 								</div>
 								<div class="fright">Session Subtitle:
-									<?= _Q($rows[20]['sessionTitle']); ?>
+									<?= _Q($rows[19]['sessionTitle']); ?>
 								</div>
 								<div class="fclear">Chair:
 									<?= _Q(makeTriList($pdo, 20, 1, $class, $this_year)); ?>
@@ -561,7 +566,7 @@ $class = 'tri';
 					</div>
 					<hr>
 					<footer>
-						<p>&copy; 2013 - 2017 by NPO International TRI Network & KAMAKURA LIVE</p>
+						<p>&copy; 2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
 					</footer>
 				</div>
 			</div>
