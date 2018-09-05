@@ -13,7 +13,7 @@
     		die($e->getMessage());
 	}
 	
-	$stmt = $pdo->prepare("SELECT * FROM `session_tbls` WHERE `sessionNo` = :sessionNo  AND `class` = :class AND `year` = '".$this_year."';");
+	$stmt = $pdo->prepare("SELECT * FROM `session_tbls2018` WHERE `sessionNo` = :sessionNo  AND `class` = :class AND `year` = '".$this_year."';");
 	$stmt->bindValue(":sessionNo", $_POST['sessionNo'], PDO::PARAM_INT);
 	$stmt->bindValue(":class", 'com', PDO::PARAM_STR);
 	$stmt->execute();
@@ -146,7 +146,7 @@
   <div class=" col-sm-12">
     <h1>Co-medicaセッション入力・修正フォーム</h1>
     <div class="row form-inline">
-      <form name="come" method="post" action="../../../2017planning/db_entry/comedical_sessions/comedical02n.php">
+      <form name="come" method="post" action="../../../2018planning/db_entry/comedical_sessions/comedical02n.php">
         <input type="hidden" name="id" value="<?= $row['id'] ?>" />
         <div class="form-group">
           <label for="sessionNo">session No</label>
@@ -195,7 +195,7 @@
     <div class="row form-group form-inline">
       <div class="col-sm-6">
         <div class="text-left">
-          <form method="post" action="../../../2017planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-left";>
+          <form method="post" action="../../../2018planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-left";>
             <button type="submit" class="btn btn-sm" name="session_tbl_id" value="<?= $row['id'] ?>">Chair追加</button>
             <input type="hidden" name="role_kind" value="1" />
             <input type="hidden" name="sessionNo" value="<?= _Q($row['sessionNo']); ?>" />
@@ -205,7 +205,7 @@
           </div>
         </div>
         <div class="text-left">
-          <form method="post" action="../../../2017planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-left";>
+          <form method="post" action="../../../2018planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-left";>
             <button type="submit" class="btn btn-sm" name="session_tbl_id" value="<?= $row['id'] ?>">講師追加</button>
             <input type="hidden" name="role_kind" value="3" />
             <input type="hidden" name="sessionNo" value="<?= _Q($row['sessionNo']); ?>" />
@@ -217,7 +217,7 @@
       </div>
       <div class="col-sm-6">
         <div class="text-right">
-          <form method="post" action="../../../2017planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-right";>
+          <form method="post" action="../../../2018planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-right";>
             <button type="submit" class="btn btn-sm" name="session_tbl_id" value="<?= $row['id'] ?>">Commentator追加</button>
             <input type="hidden" name="role_kind" value="2" />
             <input type="hidden" name="sessionNo" value="<?= _Q($row['sessionNo']); ?>" />
@@ -227,7 +227,7 @@
           </div>
         </div>
         <div class="text-right">
-          <form method="post" action="../../../2017planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-right";>
+          <form method="post" action="../../../2018planning/db_entry/comedical_sessions/chair_mod_add01.php" class="form-inline text-right";>
             <button type="submit" class="btn btn-sm" name="session_tbl_id" value="<?= $row['id'] ?>">カテ室画像診断追加</button>
             <input type="hidden" name="role_kind" value="3" />
             <input type="hidden" name="sessionNo" value="<?= _Q($row['sessionNo']); ?>" />

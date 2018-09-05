@@ -13,7 +13,7 @@ try {
 	die( $e->getMessage() );
 }
 
-$stmt = $pdo->prepare( "SELECT * FROM `session_tbls` WHERE `sessionNo` = :sessionNo AND `class` = :class AND `year` = :year;" );
+$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `sessionNo` = :sessionNo AND `class` = :class AND `year` = :year;" );
 $stmt->bindValue( ":sessionNo", $_POST[ 'sessionNo' ], PDO::PARAM_INT );
 $stmt->bindValue( ":class", 'com', PDO::PARAM_STR );
 $stmt->bindValue( ":year", $this_year, PDO::PARAM_STR );
@@ -55,57 +55,57 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
 			<div class="row">
 
 				<div class="row">
-					<form name="tri" method="post" action="comedical04n.php">
-						<div class="col-lg-12">
-							<h3>セッション番号:
+
+					<div class="col-lg-12">
+						<h3>セッション番号:
             <?= _Q($row['sessionNo']) ?>
           </h3>
-							<h3>セッション・タイトル:
+						<h3>セッション・タイトル:
             <?= _Q($row['sessionTitle']) ?>
           </h3>
-							<h4>座長:
-            <?=  _Q(makeComeList2017($pdo, $row['sessionNo'], 1, 'com', $this_year)) ?>
+						<h4>座長:
+            <?=  _Q(makeCommonSessionList($pdo, $row['sessionNo'], 1, 'com', $this_year)) ?>
           </h4>
-							<?php 
+						<?php 
 			if ($row['sessionTitle'] != '') {
         			echo "<h5>セッション・タイトル: "._Q($row['sessionTitle'])."</h5>";
          	} 
 		 ?>
-							<h4>モデレーター: 
-        		<?= _Q(makeComeList2017($pdo, $row['sessionNo'], 2, 'com', $this_year)) ?>
+						<h4>モデレーター: 
+        		<?=  _Q(makeCommonSessionList($pdo, $row['sessionNo'], 2, 'com', $this_year)) ?>
          </h4>
-							<?php
-							if ( $row[ 'lectureTitle' ] != '' ) {
-								echo "<h5>演題名: " . _Q( $row[ 'lectureTitle' ] ) . "</h5>";
-							}
-							?>
-							<h4>演者:
-        		<?= _Q(makeComeList2017($pdo, $row['sessionNo'], 3, 'com', $this_year)) ?>
+						<?php
+						if ( $row[ 'lectureTitle' ] != '' ) {
+							echo "<h5>演題名: " . _Q( $row[ 'lectureTitle' ] ) . "</h5>";
+						}
+						?>
+						<h4>演者:
+        		<?=  _Q(makeCommonSessionList($pdo, $row['sessionNo'], 3, 'com', $this_year)) ?>
         </h4>
-							<h5>カテ室画像診断者:
-        		<?= _Q(makeComeList2017($pdo, $row['sessionNo'], 4, 'com', $this_year)) ?>
+						<h5>カテ室画像診断者:
+        		<?=  _Q(makeCommonSessionList($pdo, $row['sessionNo'], 4, 'com', $this_year)) ?>
          </h5>
 
-							<?php
-							if ( $row[ 'venue' ] != '' ) {
-								echo "<h5>会場名: " . _Q( $row[ 'venue' ] ) . "</h5>";
-							}
-							?>
-							<p>セッション内容:
-								<?= _Q($row['description']) ?>
-							</p>
-							<?php
-							if ( $row[ 'cosponsor' ] != '' ) {
-								echo "<h5>共催企業: " . _Q( $row[ 'cosponsor' ] ) . "</h5>";
-							}
-							?>
-						</div>
+						<?php
+						if ( $row[ 'venue' ] != '' ) {
+							echo "<h5>会場名: " . _Q( $row[ 'venue' ] ) . "</h5>";
+						}
+						?>
+						<p>セッション内容:
+							<?= _Q($row['description']) ?>
+						</p>
+						<?php
+						if ( $row[ 'cosponsor' ] != '' ) {
+							echo "<h5>共催企業: " . _Q( $row[ 'cosponsor' ] ) . "</h5>";
+						}
+						?>
+					</div>
 
 				</div>
 
 				<hr>
 				<footer>
-					<p>&copy; 2013 - 2017 by NPO International TRI Network & KAMAKURA LIVE</p>
+					<p>&copy; 2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
 				</footer>
 			</div>
 		</div>

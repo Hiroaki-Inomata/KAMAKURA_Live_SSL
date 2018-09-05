@@ -13,7 +13,7 @@
     		die($e->getMessage());
 	}
 	
-	$stmto = $pdo->prepare("SELECT * FROM `session_tbls` WHERE `id` = :id AND `class` = 'com' AND `year` = '".$this_year."';");
+	$stmto = $pdo->prepare("SELECT * FROM `session_tbls2018` WHERE `id` = :id AND `class` = 'com' AND `year` = '".$this_year."';");
 	$stmto->bindValue(":id", $_POST['id'], PDO::PARAM_INT);
 	$flago = $stmto->execute();
 	if (!$flago) {
@@ -30,7 +30,7 @@
 	if ($row['cosponsor'] != $_POST['cosponsor']) $change_flag = true;
 
 	if ($change_flag) {
-		$stmt = $pdo->prepare("UPDATE `session_tbls` SET `begin` = :begin, 
+		$stmt = $pdo->prepare("UPDATE `session_tbls2018` SET `begin` = :begin, 
 		`duration` = :duration, `sessionTitle` = :sessionTitle, ".
 		"`lectureTitle` = :lectureTitle, `venue` = :venue, ".
 		"`description` = :description, `cosponsor` = :cosponsor, `class` = :class, `changed` = :changed, `year` = :year WHERE `id` = :id;");
@@ -61,7 +61,7 @@
 			echo "Failed to update Database".$e->getMessage();
 		}	
 	}
-	header('Location:../../index2017come_mod-n.php');
+	header('Location:../../index2018com_mod-n.php');
 ?>
 
 <!DOCTYPE html>

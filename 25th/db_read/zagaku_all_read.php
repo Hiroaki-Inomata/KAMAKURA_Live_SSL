@@ -13,7 +13,7 @@ try {
 	die( $e->getMessage() );
 }
 $class = 'zagaku';
-$stmt = $pdo->prepare( "SELECT * FROM `session_tbls` WHERE `class` = '" . $class . "' AND `year` = '" . $this_year . "' ORDER BY `begin` ASC;" );
+$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `class` = '" . $class . "' AND `year` = '" . $this_year . "' ORDER BY `begin` ASC;" );
 // session_noでのソートを辞めた　従って、classと時刻のみでソートされる
 $flag = $stmt->execute();
 $rows = $stmt->fetchAll( PDO::FETCH_ASSOC );
@@ -24,7 +24,7 @@ if ( !$flag ) {
 	exit( $infor[ 2 ] );
 }
 
-$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls`;" );
+$stmt = $pdo->prepare( "SELECT MAX(`changed`) FROM `session_tbls2018`;" );
 $stmt->execute();
 $row_come = $stmt->fetch( PDO::FETCH_ASSOC );
 

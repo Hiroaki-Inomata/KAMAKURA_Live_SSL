@@ -128,6 +128,7 @@ a.pay {
 					<li class="dropdown col-xs-2 text-center"> <a href="#" class="dropdown-toggle li-white" data-toggle="dropdown"><span class="glyphicon glyphicon-home navigation_icon"></span></a>
 
 						<ul class="dropdown-menu">
+							<!--
 							<li><a href="25th/db_read/tri_session_all_read.php">TRIライブ一日目</a>
 							</li>
 							<li><a href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
@@ -137,6 +138,17 @@ a.pay {
 							<li><a href="25th/db_read/zagaku_all_read.php">インタベ座学</a>
 							</li>
 							<li><a href="25th/db_read/come_session_all_read.php">コメディカル・セッション</a>
+							</li>
+							-->
+							<li><a href="#">TRIライブ一日目</a>
+							</li>
+							<li><a href="#">Welcome Party</a>
+							</li>
+							<li><a href="#">TRIライブ二日目</a>
+							</li>
+							<li><a href="#">インタベ座学</a>
+							</li>
+							<li><a href="25th/db_read/com_session_all_read.php">コメディカル・セッション</a>
 							</li>
 							<li class="divider"></li>
 							<p class="dropdown-header">詳細</p>
@@ -313,19 +325,27 @@ a.pay {
 
 	<div class="container">
 		<div id="j-introduction">
-			<h5 class="title">2018年12月開催<span class="red_bold_sm"> 最終更新: <? $latest = '2018/AUG/20'; ?>
+			<h5 class="title">2018年12月15日と16日開催<span class="red_bold_sm"> 最終更新: <? $latest = '2018/AUG/31'; ?>
       <?= $latest ?>
       </span></h5>
 			<h3 class="title">鎌倉ライブ2018 <a class="btn btn-primary btn-sm eng" role="button">English</a> CVIT専門医認定医更新点数2点</h3>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="input-group">
+						<!--
 						<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read.php ">TRIライブ(15日)</a>
 						<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">インタベ座学(15日)</a>
 						<a class="btn btn-primary btn-sm" role="button" href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
 						<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read.php#day2">TRIライブ(16日)</a>
 						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">コメコメ(16日)</a>
 						<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター</a>
+-->
+						<a class="btn btn-success btn-sm" role="button" href="#">TRIライブ(15日)</a>
+						<a class="btn btn-default btn-sm" href="#">インタベ座学(15日)</a>
+						<a class="btn btn-primary btn-sm" role="button" href="#">Welcome Party</a>
+						<a class="btn btn-warning btn-sm" role="button" href="#">TRIライブ(16日)</a>
+						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">コメコメ確認</a>
+						<a class="btn btn-danger btn-sm" role="button" href="#">OCT/FFRトレーニング・センター</a>
 					</div>
 				</div>
 				<div class="col-lg-10 back-sky-blue">
@@ -334,6 +354,7 @@ a.pay {
 					<p><img src="25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
 					</p>
 					<ol>
+						<!--
 						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (15th - DEC)</a> &nbsp;
 							<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2 ">TRI Live (16th - DEC)</a>
 						</li>
@@ -343,6 +364,17 @@ a.pay {
 							<a class="btn btn-danger btn-lg pay" role="button" href="25th/2018FinalPDFProgram/2018FinalProgram.pdf">最終プログラム</a>
 						</li>
 						<li>OCT/FFRトレーニングセンター&nbsp;&nbsp;<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター (15日、16日)</a>
+						</li>
+-->
+						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="#">TRI Live (15th - DEC)</a> &nbsp;
+							<a class="btn btn-warning btn-sm" role="button" href="#">TRI Live (16th - DEC)</a>
+						</li>
+						<li>インターベンション座学&nbsp;&nbsp;<a class="btn btn-default btn-sm" role="button" href="#">インターベンション座学(15日)</a>
+						</li>
+						<li>コメディカル・セッション&nbsp;&nbsp;<a class="btn btn-info btn-sm" role="button" href="#">コメディカル・セッション(16日)</a> &nbsp;&nbsp;
+							<a class="btn btn-danger btn-lg pay" role="button" href="#">最終プログラム</a>
+						</li>
+						<li>OCT/FFRトレーニングセンター&nbsp;&nbsp;<a class="btn btn-danger btn-sm" role="button" href="#">OCT/FFRトレーニング・センター (15日、16日)</a>
 						</li>
 					</ol>
 					<p>そして、今年はそれぞれのセッションの中で、皆で討議する点をより明確にしてこのコースを開催します。</p>
@@ -358,7 +390,7 @@ a.pay {
 		</div>
 
 		<div id="e-introduction">
-			<h5 class="title">December 2018<span class="red_bold_sm"> Last Update:
+			<h5 class="title">December 15th and 16th, 2018<span class="red_bold_sm"> Last Update:
       <?= $latest ?>
     </h5>
 			<h3 class="title">KAMAKURA LIVE 2018 <a class="btn btn-danger btn-sm jp" role="button" >日本語</a></h3>
@@ -367,7 +399,7 @@ a.pay {
 					<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">ZAGAKU (15th)</a>
 					<a class="btn btn-primary btn-sm" role="button" href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
 					<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2">TRI Live (16th)</a>
-					<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">ComeCome (16th)</a>
+					<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">ComeCome (16th)</a>
 					<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFR Traning Centger</a>
 				</div>
 				<div class="col-lg-10 back-faint-pink">

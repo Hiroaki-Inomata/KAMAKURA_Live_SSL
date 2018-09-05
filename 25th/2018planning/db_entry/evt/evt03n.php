@@ -14,7 +14,7 @@
 	}
 
 	$class = 'zagaku';
-	$this_year = '2017';
+	//$this_year = '2018';
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
 	 ?>
     </div>
     <div class="row">
-      <form name="tri" method="post" action="../../../2017planning/db_entry/evt/evt04n.php">
+      <form name="tri" method="post" action="../../../2018planning/db_entry/evt/evt04n.php">
          <div class="col-lg-12">
           <h3>セッション番号:
             <?= _Q($_SESSION['sessionNo']) ?>
@@ -104,14 +104,14 @@
         <input type="submit" value="これで良いです" />
       </form>
       </div>
-      <form method="post" action="../../../2017planning/db_entry/evt/evt01n.php">
+      <form method="post" action="../../../2018planning/db_entry/evt/evt01n.php">
         <input type="hidden" name="sessionNo" value="<?= $_SESSION['sessionNo']; ?>" />
         <input type="submit" value="内容に誤りがあります"  />
       </form>
     
     <hr>
     <footer>
-      <p>&copy;  2013 - 2017 by NPO International TRI Network & KAMAKURA LIVE</p>
+      <p>&copy;  2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
     </footer>
   </div>
 </div>

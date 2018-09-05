@@ -34,7 +34,7 @@ if ($_SERVER['SERVER_NAME'] === 'localhost') {
 
 
 $db_name_sessions = 'kamakuralive_sessions';
-$this_year = '2017';
+$this_year = '2018';
 
 // site
 $site_name = 'KAMAKURA LIVE';

@@ -50,7 +50,7 @@
 			$data .= '<button><i class="glyphicon glyphicon-plus-sign"></i></button>';
 			$data .= '</td></form>';
 			$data .= '<td class="small_left_align">'._Q($row['english_sirname']).' '._Q($row['english_firstname']).'</td>';
-			$data .= '<td class="small_left_align">'._Q($row['kana_sirname']).' '._Q($row['kana_firstname']).'</td>';
+			$data .= '<td class="small_left_align">'._Q(mb_convert_kana($row['kana_sirname'], 'KC')).' '._Q(mb_convert_kana($row['kana_firstname'])).'</td>';
 			$data .= '<td class="small_left_align">'._Q($row['kanji_sirname']).' '._Q($row['kanji_firstname']).'</td>';
 			$data .= '<td class="small_left_align">'._Q($row['hp_name_japanese']).'</td>';
 			$data .= '<td class="small_left_align">'._Q($row['nation']).'</td>';

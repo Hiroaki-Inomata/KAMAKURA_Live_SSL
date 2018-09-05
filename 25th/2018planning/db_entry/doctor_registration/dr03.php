@@ -29,7 +29,7 @@
   <h2 class="text-center text-info">Faculty入力確認画面</h2>
   <div class="container">
     <div class="row">
-      <form name="doctor" method="post" action="../../../2017planning/db_entry/doctor_registration/dr04.php">
+      <form name="doctor" method="post" action="../../../2018planning/db_entry/doctor_registration/dr04.php">
         <?= "<h4>英語Sirname:　　"._Q($_SESSION['english_sirname'])."</h4>"; ?>
         <?= "<h4>英語Firstname:　　"._Q($_SESSION['english_firstname'])."</h4>"; ?>
         <?= "<h4>Email Addresse:　　"._Q($_SESSION['email'])."</h4>"; ?>
@@ -102,7 +102,7 @@
       </form>
     </div>
     <div><br><br></div>
-    <form method="post" action="../../../2017planning/db_entry/doctor_registration/dr01.php">
+    <form method="post" action="../../../2018planning/db_entry/doctor_registration/dr01.php">
       <input type="hidden" name="id" value="<?= $_SESSION['id']; ?>" />
       <input type="submit" value="内容に誤りがあります"  />
     </form>

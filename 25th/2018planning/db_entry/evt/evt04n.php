@@ -13,7 +13,7 @@
     		die($e->getMessage());
 	}
 	
-	$stmto = $pdo->prepare("SELECT * FROM `session_tbls` WHERE `id` = :id AND `class` = :class AND `year` = :year;");
+	$stmto = $pdo->prepare("SELECT * FROM `session_tbls2018` WHERE `id` = :id AND `class` = :class AND `year` = :year;");
 	$stmto->bindValue(":id", $_POST['id'], PDO::PARAM_INT);
 	$stmto->bindValue(":class", 'zagaku', PDO::PARAM_STR);
 	$stmto->bindValue(":year", $this_year, PDO::PARAM_STR);
@@ -32,14 +32,19 @@
 	if ($row['cosponsor'] != $_POST['cosponsor']) $change_flag = true;
 
 	if ($change_flag) {
-		$stmt = $pdo->prepare("UPDATE `session_tbls` SET `begin` = :begin, 
-		`duration` = :duration, `sessionTitle` = :sessionTitle, ".
+		// ここから2018年度改良
+		$beginDate = '2018-12-15 '.$_POST['begin'];
+		//echo $beginDate; exit;
+		//
+		$stmt = $pdo->prepare("UPDATE `session_tbls2018` SET `begin` = :begin, 
+		`duration` = :duration, `sessionTitle` = :sessionTitle, `beginDate` = :beginDate, ".
 		"`lectureTitle` = :lectureTitle, `venue` = :venue, ".
 		"`description` = :description, `cosponsor` = :cosponsor, `class` = :class, `changed` = :changed, `year` = :year WHERE `id` = :id;");
 		$stmt->bindValue(":id", $_POST['id'], PDO::PARAM_INT);
 		$stmt->bindValue(":begin", $_POST['begin']);
 		$stmt->bindValue(":duration", $_POST['duration']);
 		$stmt->bindValue(":sessionTitle", $_POST['sessionTitle']);
+		$stmt->bindValue(":beginDate", $beginDate);
 		$stmt->bindValue(":lectureTitle", $_POST['lectureTitle']);
 		$stmt->bindValue(":venue", $_POST['venue']); 
 		$stmt->bindValue(":description", $_POST['description']);
@@ -63,7 +68,7 @@
 			echo "Failed to update Database".$e->getMessage();
 		}	
 	}
-	header('Location:../../index2017evt_mod-n.php');
+	header('Location:../../index2018evt_mod-n.php');
 ?>
 
 <!DOCTYPE html>

@@ -58,7 +58,7 @@ $latest = mb_substr( $latest, 0, 10 );
 							</li>
 							<li><a href="db_read/zagaku_all_read.php">インタベ座学</a>
 							</li>
-							<li><a href="db_read/come_session_all_read.php">コメディカル・セッション</a>
+							<li><a href="db_read/com_session_all_read.php">コメディカル・セッション</a>
 							</li>
 							<li class="divider"></li>
 							<p class="dropdown-header">詳細</p>
@@ -246,7 +246,7 @@ $latest = mb_substr( $latest, 0, 10 );
 						<a class="btn btn-light btn-sm" href="db_read/zagaku_all_read.php">インタベ座学(09日)</a>
 						<a class="btn btn-primary btn-sm" role="button" href="2017FinalPDFProgram/2017Party.pdf">Welcome Party</a>
 						<a class="btn btn-warning btn-sm" role="button" href="db_read/tri_session_all_read.php#day2">TRIライブ(10日)</a>
-						<a class="btn btn-info btn-sm" role="button" href="db_read/come_session_all_read.php">コメコメ(10日)</a>
+						<a class="btn btn-info btn-sm" role="button" href="db_read/com_session_all_read.php">コメコメ(10日)</a>
 						<a class="btn btn-danger btn-sm" role="button" href="../oct_training/index.php">OCT/FFRトレーニング・センター</a>
 					</div>
 				</div>
@@ -285,7 +285,7 @@ $latest = mb_substr( $latest, 0, 10 );
 					<a class="btn btn-light btn-sm" href="db_read/zagaku_all_read.php">ZAGAKU (09th)</a>
 					<a class="btn btn-primary btn-sm" role="button" href="2017FinalPDFProgram/2017Party.pdf">Welcome Party</a>
 					<a class="btn btn-warning btn-sm" role="button" href="db_read/tri_session_all_read.php#day2">TRI Live (10th)</a>
-					<a class="btn btn-info btn-sm" role="button" href="db_read/come_session_all_read.php">ComeCome (10th)</a>
+					<a class="btn btn-info btn-sm" role="button" href="db_read/com_session_all_read.php">ComeCome (10th)</a>
 					<a class="btn btn-danger btn-sm" role="button" href="../../oct_training/index.php">OCT/FFR Traning Centger</a>
 				</div>
 				<div class="col-lg-10 back-faint-pink">
