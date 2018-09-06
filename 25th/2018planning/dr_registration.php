@@ -87,7 +87,7 @@ foreach ( $rows as $row ) {
 	<div class="row">
 		<div class="col-lg-11">
 			<div class="small">
-				<button type="submit" class="btn btn-danger" onClick="location.href='../../index-mod.php'">Top Pageに戻る</button>
+				<button type="submit" class="btn btn-danger" onClick="location.href='../../planner_only/index-mod.php'">Top Pageに戻る</button>
 				<form method="post" action="../2018planning/db_entry/doctor_registration/dr01new.php">
 					<button type="submit" class="btn btn-warning">新規Faculty登録</button>
 				</form>
@@ -118,7 +118,7 @@ foreach ( $rows as $row ) {
 				<form method="post" action="../2018planning/db_entry/doctor_registration/dr01new.php">
 					<button type="submit" class="btn btn-warning">新規Faculty登録</button>
 				</form>
-				<button type="submit" class="btn btn-danger" onClick="location.href='../../index-mod.php'">Top Pageに戻る</button>
+				<button type="submit" class="btn btn-danger" onClick="location.href='../../planner_only/index-mod.php'">Top Pageに戻る</button>
 			</div>
 		</div>
 	</div>

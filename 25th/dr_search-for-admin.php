@@ -71,7 +71,7 @@ $latest = max( $row_dr[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created`)' ] );
 			</div>
 		</div>
 		<div class="col-sm-12">
-			<p><a class="btn btn-danger" id="return" href="../index-mod.php">Return</a>
+			<p><a class="btn btn-danger" id="return" href="../planner_only/index-mod.php">Return</a>
 			</p>
 		</div>
 	</div>

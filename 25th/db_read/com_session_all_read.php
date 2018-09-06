@@ -50,7 +50,7 @@ $class = 'com';
 	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" type="text/css" href="../../bootstrap/jumbotron/jumbotron.css">
-	<link rel="stylesheet" type="text/css" href="come_session_table.css">
+	<link rel="stylesheet" type="text/css" href="com_session_table.css">
 	<style>
 		.radial-academy {
 			padding: 2rem;
@@ -350,7 +350,7 @@ $class = 'com';
 					<div class="fclear">講演演題名:
 						<?= _Q($rows[$i]['lectureTitle']); ?>
 					</div>
-					<div class="text-center col-md-10">ポスターセッション審査結果発表 : 遠山　愼一<br><br>皆様方　今年もご苦労様でした　安全に家路につき、そして良いクリスマスとお正月をお迎え下さい　来年もお会いしましょう
+					<div class="text-center text-white">ポスターセッション審査結果発表 : 遠山　愼一<br><br>❤♡♥　皆様方　今年もご苦労様でした　❤♡♥<br>安全に家路につき、そして良いクリスマスとお正月をお迎え下さい<br>❤♡♥　来年もお会いしましょう　❤♡♥
 					</div>
 					<div class="col-md-1"><br>
 					</div>

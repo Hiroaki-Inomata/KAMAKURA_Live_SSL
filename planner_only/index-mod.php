@@ -1,8 +1,8 @@
 <?php
 session_start();
 session_regenerate_id( true );
-require_once( 'utilities/config.php' );
-require_once( 'utilities/lib.php' );
+require_once( '../utilities/config.php' );
+require_once( '../utilities/lib.php' );
 charSetUTF8();
 //header('Location: ../25th/index_basic.php');	//何故かこれでコピーページに飛ばさないと javascriptや cssが働かない
 //接続
@@ -37,10 +37,10 @@ $latest = mb_substr( $latest, 0, 10 );
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="file:///Macintosh HD/Users/transradial/サイト/favicon.ico">
 	<title>鎌倉ライブ2018</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="25th/2018top_main.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.6/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../25th/2018top_main.css">
 	<style>
 a.pay {
 			-webkit-animation: blink 1.0s ease-in-out infinite alternate;
@@ -148,16 +148,16 @@ a.pay {
 							</li>
 							<li><a href="#">インタベ座学</a>
 							</li>
-							<li><a href="25th/db_read/com_session_all_read.php">コメディカル・セッション</a>
+							<li><a href="../25th/db_read/com_session_all_read.php">コメディカル・セッション</a>
 							</li>
 							<li class="divider"></li>
 							<p class="dropdown-header">詳細</p>
 							<li class="divider"></li>
-							<li><a href="25th/2018planning/introduction2018.html">Introduction</a>
+							<li><a href="../25th/2018planning/introduction2018.html">Introduction</a>
 							</li>
-							<li><a href="25th/dr_role_find.php">Find My Role <i class="glyphicon glyphicon-search"></i></a>
+							<li><a href="../25th/dr_role_find.php">Find My Role <i class="glyphicon glyphicon-search"></i></a>
 							</li>
-							<li><a href="25th/comecome2018/2018comecome .pdf">コメコメ演題募集</a>
+							<li><a href="../25th/comecome2018/2018comecome .pdf">コメコメ演題募集</a>
 							</li>
 							<li><a class="btn btn-primary" role="button" id="openProgram">このページ</a>
 							</li>
@@ -165,15 +165,15 @@ a.pay {
 					</li>
 					<li class="dropdown col-xs-2 text-center"><a href="#" class="dropdown-toggle li-white" data-toggle="dropdown"><span class="glyphicon glyphicon-calendar navigation_icon"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="25th/dr_registration.php?member_kind=4">日本国内招聘Faculty</a>
+							<li><a href="../25th/dr_registration.php?member_kind=4">日本国内招聘Faculty</a>
 							</li>
-							<li><a href="25th/dr_registration.php?member_kind=3">Foreign Invited Faculty</a>
+							<li><a href="../25th/dr_registration.php?member_kind=3">Foreign Invited Faculty</a>
 							</li>
-							<li><a href="25th/dr_registration.php?member_kind=6">Sd Faculty</a>
+							<li><a href="../25th/dr_registration.php?member_kind=6">Sd Faculty</a>
 							</li>
-							<li><a href="25th/dr_registration.php?member_kind=5">親善参加</a>
+							<li><a href="../25th/dr_registration.php?member_kind=5">親善参加</a>
 							</li>
-							<li><a href="25th/dr_registration.php?member_kind=1">NPO社員</a>
+							<li><a href="../25th/dr_registration.php?member_kind=1">NPO社員</a>
 							</li>
 						</ul>
 					</li>
@@ -194,7 +194,7 @@ a.pay {
 					<li class="dropdown col-xs-2 text-center"><a href="#" class="dropdown-toggle li-white" data-toggle="dropdown"><span class="glyphicon glyphicon-search navigation_icon"></span></a>
 						<ul class="dropdown-menu dropdown-menu-right">
 							<p>&nbsp;Find your role!</p>
-							<li><a class="btn-warning btn-lg" role="button" href="25th/dr_role_find.php">Find My Role! <i class="glyphicon glyphicon-search"></i></a>
+							<li><a class="btn-warning btn-lg" role="button" href="../25th/dr_role_find.php">Find My Role! <i class="glyphicon glyphicon-search"></i></a>
 							</li>
 						</ul>
 					</li>
@@ -204,7 +204,7 @@ a.pay {
 							</li>
 							<li><a href="http://www.nybldg.jp/access/index.html">日石ホール</a>
 							</li>
-							<li><a href="../TRC/Xian.html">City Wall in Xi'an</a>
+							<li><a href="file:///Macintosh HD/Users/transradial/サイト/TRC/Xian.html">City Wall in Xi'an</a>
 							</li>
 							<li><a class="btn btn-danger openProgram" role="button">このホームページについて</a>
 								<li><a class="btn btn-danger openProgramE" role="button">This Page</a>
@@ -328,7 +328,7 @@ a.pay {
 			<h5 class="title">2018年12月15日と16日開催<span class="red_bold_sm"> 最終更新: <? $latest = '2018/AUG/31'; ?>
       <?= $latest ?>
       </span></h5>
-			<h3 class="title">鎌倉ライブ2018 <a class="btn btn-primary btn-sm eng" role="button">English</a> CVIT専門医認定医更新点数2点</h3>
+			<h3 class="title">鎌倉ライブ2018　プログラム組み立て用管理者ページ</h3>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="input-group">
@@ -344,16 +344,16 @@ a.pay {
 						<a class="btn btn-default btn-sm" href="#">インタベ座学(15日)</a>
 						<!-- <a class="btn btn-primary btn-sm" role="button" href="#">Welcome Party</a> -->
 						<a class="btn btn-warning btn-sm" role="button" href="#">TRIライブ(16日)</a>
-						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">コメコメ確認</a>
-						<a class="btn btn-success btn-sm" role="button" href="25th/2018planning/index2018com_mod-n.php">コメコメ修正</a>
-						<a class="btn btn-danger btn-sm" role="button" href="25th/2018planning/dr_registration.php">医師・コメ新規登録</a>
-						<a class="btn btn-primary btn-sm" role="button" href="25th/dr_search-for-admin.php">登録医師・コメ検索</a>
+						<a class="btn btn-info btn-sm" role="button" href="../25th/db_read/com_session_all_read.php">コメコメ確認</a>
+						<a class="btn btn-success btn-sm" role="button" href="../25th/2018planning/index2018com_mod-n.php">コメコメ修正</a>
+						<a class="btn btn-danger btn-sm" role="button" href="../25th/2018planning/dr_registration.php">医師・コメ新規登録</a>
+						<a class="btn btn-primary btn-sm" role="button" href="../25th/dr_search-for-admin.php">登録医師・コメ検索</a>
 					</div>
 				</div>
 				<div class="col-lg-10 back-sky-blue">
 					<p> 今年も毎年恒例の鎌倉ライブデモンストレーション・コースが開催される時となりました。本年はこれまで続けてきた　治験/臨床試験に関する セッションは昨年に続いてお休みさせて頂きます。しかしながら、これらの活動の成果でもある新たなディバイス OAS (Coronary Orbital Atherectomy System - DiamondBack360)が本格的に臨床使用されるようになっています。今年も昨年好評であった若手医師とコメディカルを対象としたインターベンション座学を併設します:
 					</p>
-					<p><img src="25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
+					<p><img src="../25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
 					</p>
 					<ol>
 						<!--
@@ -384,9 +384,9 @@ a.pay {
 					<p>なお本HomePageは齋藤　滋自らがプログラミング知識を駆使して作り上げているものです　その内容は順次リアルタイムに更新されていますその内容は、鎌倉ライブ実行委員会メンバー皆が構想を練り、それを Web上のデータベースに自ら反映してもらい、同時にそれが Web上に公開される、そのようなプログラミングを行っています　不具合がありますればご容赦の上、ご指摘下さい</p>
 				</div>
 				<div class="col-sm-12">
-					<div class="input-group"></div><a class="btn btn-default btn-sm" role="button" href="#">事前登録締</a> <a class="btn btn-primary btn-sm" role="button" href="25th/dr_role_find.php">私のお仕事 <i class="glyphicon glyphicon-search"></i></a> <a class="btn btn-success  btn-sm openMidokoro" role="button">今年の見どころ　見てね! &raquo;</a> <a class="btn btn-danger btn-sm pay" role="button" href="25th/2018FinalPDFProgram/2018FinalProgram.pdf">最終プログラムPDF</a>
-					<a class="btn btn-info btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">コメコメ演題受付中</a>
-					<a class="btn btn-warning btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">コメコメプログラム概要</a>
+					<div class="input-group"></div><a class="btn btn-default btn-sm" role="button" href="#">事前登録締</a> <a class="btn btn-primary btn-sm" role="button" href="../25th/dr_role_find.php">私のお仕事 <i class="glyphicon glyphicon-search"></i></a> <a class="btn btn-success  btn-sm openMidokoro" role="button">今年の見どころ　見てね! &raquo;</a> <a class="btn btn-danger btn-sm pay" role="button" href="../25th/2018FinalPDFProgram/2018FinalProgram.pdf">最終プログラムPDF</a>
+					<a class="btn btn-info btn-sm" role="button" href="../25th/comecome2018/2018comecome.pdf">コメコメ演題受付中</a>
+					<a class="btn btn-warning btn-sm" role="button" href="../25th/comecome2018/2018comecome.pdf">コメコメプログラム概要</a>
 				</div>
 			</div>
 		</div>
@@ -397,16 +397,16 @@ a.pay {
     </h5>
 			<h3 class="title">KAMAKURA LIVE 2018 <a class="btn btn-danger btn-sm jp" role="button" >日本語</a></h3>
 			<div class="row">
-				<div class="col-lg-12"> <a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (15th)</a>
-					<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">ZAGAKU (15th)</a>
-					<a class="btn btn-primary btn-sm" role="button" href="25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
-					<a class="btn btn-warning btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php#day2">TRI Live (16th)</a>
-					<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">ComeCome (16th)</a>
-					<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFR Traning Centger</a>
+				<div class="col-lg-12"> <a class="btn btn-success btn-sm" role="button" href="../25th/db_read/tri_session_all_read1.php ">TRI Live (15th)</a>
+					<a class="btn btn-default btn-sm" href="../25th/db_read/zagaku_all_read.php">ZAGAKU (15th)</a>
+					<a class="btn btn-primary btn-sm" role="button" href="../25th/2018FinalPDFProgram/2018welcome_party.pdf">Welcome Party</a>
+					<a class="btn btn-warning btn-sm" role="button" href="../25th/db_read/tri_session_all_read1.php#day2">TRI Live (16th)</a>
+					<a class="btn btn-info btn-sm" role="button" href="../25th/db_read/com_session_all_read.php">ComeCome (16th)</a>
+					<a class="btn btn-danger btn-sm" role="button" href="../25th/oct_training/index.php">OCT/FFR Traning Centger</a>
 				</div>
 				<div class="col-lg-10 back-faint-pink">
 					<p> We are proud to announce that we will have KAMAKURA LIVE DEMONSTRATION COURESE 2018 this year as the past more than 20 years. This year, we will be back to our original mission, which is to promote transradial coronary intervention (TRI) all around the world. This year, the course consists of 3 parts:</p>
-					<p><img src="25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
+					<p><img src="../25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
 					</p>
 					<ol>
 						<li>TRI Session
@@ -419,9 +419,9 @@ a.pay {
 					<p>In each session, we have picked up several discussion points to focus on several specific areas.</p>
 					<p>This course will be held in YOKOHAMA Bay Area, where everything is illuminated beautifully in the Christmas season. Let's enjoy this course! </p>
 				</div>
-				<div class="col-sm-12"> <a class="btn btn-default btn-sm" role="button" href="https://conv.toptour.co.jp/shop/evt/KamakuraLive_2018/">Discount Preregistration</a> <a class="btn btn-primary btn-sm" role="button" href="25th/dr_role_find.php">Find My Role <i class="glyphicon glyphicon-search"></i></a> <a class="btn btn-success  btn-sm openMidokoro" role="button">What's interesting&raquo;</a> <a class="btn btn-danger btn-sm" role="button" href="25th/2018FinalPDFProgram/pamphlet2018final.pdf">Final PDF Program</a>
-					<a class="btn btn-info btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">Wait for Your Submission</a>
-					<a class="btn btn-success btn-sm" role="button" href="25th/comecome2018/2018comecome.pdf">About ComeCome</a>
+				<div class="col-sm-12"> <a class="btn btn-default btn-sm" role="button" href="https://conv.toptour.co.jp/shop/evt/KamakuraLive_2018/">Discount Preregistration</a> <a class="btn btn-primary btn-sm" role="button" href="../25th/dr_role_find.php">Find My Role <i class="glyphicon glyphicon-search"></i></a> <a class="btn btn-success  btn-sm openMidokoro" role="button">What's interesting&raquo;</a> <a class="btn btn-danger btn-sm" role="button" href="../25th/2018FinalPDFProgram/pamphlet2018final.pdf">Final PDF Program</a>
+					<a class="btn btn-info btn-sm" role="button" href="../25th/comecome2018/2018comecome.pdf">Wait for Your Submission</a>
+					<a class="btn btn-success btn-sm" role="button" href="../25th/comecome2018/2018comecome.pdf">About ComeCome</a>
 				</div>
 			</div>
 		</div>
@@ -431,15 +431,15 @@ a.pay {
 		</footer>
 	</div>
 
-	<script src="bootstrap/docs-assets/javascript/jquery-3.2.0.min.js"></script>
+	<script src="../bootstrap/docs-assets/javascript/jquery-3.2.0.min.js"></script>
 
-	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="../js/jquery-2.2.4.min.js"></script>
 	<!--  jqueryは二度呼びしないとdropdown menuが作動しない!! -->
-	<script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
-	<script src="bootstrap/docs-assets/javascript/extension.js"></script>
-	<script src="bootstrap/docs-assets/javascript/jglycy-1.0.js"></script>
-	<script src="bootstrap/docs-assets/javascript/jtruncsubstr.js"></script>
-	<script src="25th/index2018.js"></script>
+	<script src="../bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/docs-assets/javascript/extension.js"></script>
+	<script src="../bootstrap/docs-assets/javascript/jglycy-1.0.js"></script>
+	<script src="../bootstrap/docs-assets/javascript/jtruncsubstr.js"></script>
+	<script src="../25th/index2018.js"></script>
 </body>
 
 </html>

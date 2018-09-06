@@ -353,6 +353,7 @@ a.pay {
 					</p>
 					<p><img src="25th/Logo/Logo2018_200.png" width="84" height="71" class="right_float"/>
 					</p>
+					<p><button class="btn btn-sm btn-warning right_float" onClick="location.href = 'planner_only/index-mod.php'">管理者のみ</button></p>
 					<ol>
 						<!--
 						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="25th/db_read/tri_session_all_read1.php ">TRI Live (15th - DEC)</a> &nbsp;

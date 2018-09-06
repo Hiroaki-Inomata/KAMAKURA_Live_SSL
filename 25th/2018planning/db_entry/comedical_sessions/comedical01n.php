@@ -180,7 +180,7 @@
         <div class="form-group">
           <label for="description">セッション内容</label>
           <textarea class="form-control" name="description" rows="8" 
-    placeholder="セッションの内容について記載してください"><?= _Q($row['description']); ?>
+    placeholder="セッションの内容について記載してください"><?= _Q(nl2br($row['description'])); ?>
 </textarea>
         </div>
         <div class="form-group">

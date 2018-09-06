@@ -92,7 +92,7 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
 						}
 						?>
 						<p>セッション内容:
-							<?= _Q($row['description']) ?>
+							<?= nl2br(_Q($row['description'])) ?>
 						</p>
 						<?php
 						if ( $row[ 'cosponsor' ] != '' ) {

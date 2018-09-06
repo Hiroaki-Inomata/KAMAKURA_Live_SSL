@@ -88,7 +88,7 @@ $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created`)' ] );
 						</form>
 					</li>
 					<li>
-						<input type="submit" class="btn-danger" value="戻る" onClick="location.href = '../../index-mod.php'">
+						<button class="btn btn-danger btn-sm" onClick="location.href = '../../planner_only/index-mod.php'">戻る</button>
 					</li>
 					<li>
 						<?= _Q(mb_substr($rows[$sessionNo]['begin'], 0, 5)); ?>
@@ -138,7 +138,7 @@ $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created`)' ] );
 						</form>
 					</li>
 					<li>
-						<input type="submit" class="btn-danger" value="戻る" onClick="location.href = '../../index-mod.php'">
+						<button class="btn btn-danger btn-sm" onClick="location.href = '../../planner_only/index-mod.php'">戻る</button>
 					</li>
 					<li>
 						<?= _Q(mb_substr($rows[$sessionNo]['begin'], 0, 5)); ?>
@@ -193,7 +193,7 @@ $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created`)' ] );
 					</form>
 				</li>
 				<li>
-						<input type="submit" class="btn-danger" value="戻る" onClick="location.href = '../../index-mod.php'">
+						<button class="btn btn-danger btn-sm" onClick="location.href = '../../planner_only/index-mod.php'">戻る</button>
 					</li>
 				<li>
 					<?= _Q(mb_substr($rows[$sessionNo]['begin'], 0, 5)); ?>
