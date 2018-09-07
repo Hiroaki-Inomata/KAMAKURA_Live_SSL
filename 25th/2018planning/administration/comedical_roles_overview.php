@@ -62,7 +62,7 @@
 <!-- Custom styles for this template -->
 <link rel="stylesheet" type="text/css" href="../../../bootstrap/jumbotron/jumbotron.css">
 <link rel="stylesheet" type="text/css" href="../../2016top.css">
-<link rel="stylesheet" type="text/css" href="../../db_read/com_session_table.css">
+<link rel="stylesheet" type="text/css" href="../../db_read/come_session_table.css">
 
 </head>
 
