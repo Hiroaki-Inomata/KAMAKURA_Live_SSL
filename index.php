@@ -341,10 +341,10 @@ a.pay {
 						<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター</a>
 -->
 						<a class="btn btn-success btn-sm" role="button" href="#">TRIライブ(15日)</a>
-						<a class="btn btn-default btn-sm" href="#">インタベ座学(15日)</a>
+						<a class="btn btn-default btn-sm" href="25th/db_read/zagaku_all_read.php">インタベ座学(15日)</a>
 						<a class="btn btn-primary btn-sm" role="button" href="#">Welcome Party</a>
 						<a class="btn btn-warning btn-sm" role="button" href="#">TRIライブ(16日)</a>
-						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">コメコメ確認</a>
+						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">コメコメ(16日)</a>
 						<a class="btn btn-danger btn-sm" role="button" href="#">OCT/FFRトレーニング・センター</a>
 					</div>
 				</div>
@@ -370,9 +370,9 @@ a.pay {
 						<li>TRIセッション&nbsp;&nbsp;<a class="btn btn-success btn-sm" role="button" href="#">TRI Live (15th - DEC)</a> &nbsp;
 							<a class="btn btn-warning btn-sm" role="button" href="#">TRI Live (16th - DEC)</a>
 						</li>
-						<li>インターベンション座学&nbsp;&nbsp;<a class="btn btn-default btn-sm" role="button" href="#">インターベンション座学(15日)</a>
+						<li>インターベンション座学&nbsp;&nbsp;<a class="btn btn-default btn-sm" role="button" href="25th/db_read/zagaku_all_read.php">インターベンション座学(15日)</a>
 						</li>
-						<li>コメディカル・セッション&nbsp;&nbsp;<a class="btn btn-info btn-sm" role="button" href="#">コメディカル・セッション(16日)</a> &nbsp;&nbsp;
+						<li>コメディカル・セッション&nbsp;&nbsp;<a class="btn btn-info btn-sm" role="button" href="25th/db_read/com_session_all_read.php">コメディカル・セッション(16日)</a> &nbsp;&nbsp;
 							<a class="btn btn-danger btn-lg pay" role="button" href="#">最終プログラム</a>
 						</li>
 						<li>OCT/FFRトレーニングセンター&nbsp;&nbsp;<a class="btn btn-danger btn-sm" role="button" href="#">OCT/FFRトレーニング・センター (15日、16日)</a>

@@ -58,7 +58,7 @@ $class = 'com';
 			color: white;
 			font-weight: bold;
 			line-height: 2.8rem;
-			background-color: blueviolet;
+			background-color:#D09DF4;
 			border-radius: 2rem;
 			margin-bottom: 1rem;
 		}
@@ -80,7 +80,7 @@ $class = 'com';
 			color: darkgreen;
 			font-weight: bold;
 			line-height: 2.8rem;
-			background-color: greenyellow;
+			background-color:#FC8E5F;
 			border-radius: 2rem;
 			margin-bottom: 1rem;
 		}
@@ -91,7 +91,7 @@ $class = 'com';
 			color: darkblue;
 			font-weight: bold;
 			line-height: 2.8rem;
-			background-color: coral;
+			background-color:#8AF6CA;
 			border-radius: 2rem;
 			margin-bottom: 1rem;
 		}
@@ -102,7 +102,7 @@ $class = 'com';
 			color: darkblue;
 			font-weight: bold;
 			line-height: 2.8rem;
-			background-color: deepskyblue;
+			background-color:#6CDEF6;
 			border-radius: 2rem;
 			margin-bottom: 1rem;
 		}

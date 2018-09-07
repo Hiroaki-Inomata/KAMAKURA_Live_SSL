@@ -64,7 +64,7 @@ $latest = $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created
 						<li>最終更新日時:
 							<?= $latest ?>
 						</li>
-						<li class="bold20">&nbsp;&nbsp;インターベンション座学 12/09 (SAT) @ 日石ホール
+						<li class="bold20">&nbsp;&nbsp;インターベンション座学 12/15 (SAT) @ 日石ホール
 						</li>
 					</ul>
 				</div>
@@ -72,7 +72,7 @@ $latest = $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created
 
 
 			<?php
-			for ( $sessionNo = 0; $sessionNo < 6; $sessionNo++ ) {
+			for ( $sessionNo = 0; $sessionNo < 5; $sessionNo++ ) {
 				?>
 			<div class="panel-group border-thick">
 				<?php
@@ -142,7 +142,7 @@ $latest = $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created
 		}
 		?>
 
-		<?php $sessionNo = 6; ?>
+		<?php $sessionNo = 5; ?>
 		<div class="panel-group border-luncheon">
 			<div class="panel panel-warning">
 				<div class="panel-heading">
@@ -195,7 +195,7 @@ $latest = $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created
 		</div>
 
 		<?php
-		for ( $sessionNo = 7; $sessionNo < 15; $sessionNo++ ) {
+		for ( $sessionNo = 6; $sessionNo < 13; $sessionNo++ ) {
 			?>
 		<div class="panel-group border-thick">
 			<?php
@@ -270,7 +270,7 @@ $latest = $latest = max( $row_come[ 'MAX(`changed`)' ], $row_role[ 'MAX(`created
 	</div>
 	<hr>
 	<footer>
-		<p>&copy; 2013 - 2017 by NPO International TRI Network & KAMAKURA LIVE</p>
+		<p>&copy; 2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
 	</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

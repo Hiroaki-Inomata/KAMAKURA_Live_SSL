@@ -62,7 +62,7 @@
 			echo "Failed to update Database".$e->getMessage();
 		}	
 	}
-	header('Location:../../index2017tri_mod-n.php');
+	header('Location:../../index2018tri_mod-n.php');
 ?>
 
 <!DOCTYPE html>

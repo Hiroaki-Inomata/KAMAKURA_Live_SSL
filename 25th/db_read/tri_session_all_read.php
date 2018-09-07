@@ -13,7 +13,7 @@ try {
 	die( $e->getMessage() );
 }
 
-$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `class` = 'tri' AND `year` = '2017' ORDER BY `sessionNo` AND `id` > '185'ASC;" );
+$stmt = $pdo->prepare( "SELECT * FROM `session_tbls2018` WHERE `class` = 'tri' AND `year` = '2018' ORDER BY `sessionNo` AND `id` > '185'ASC;" );
 $flag = $stmt->execute();
 $rows = $stmt->fetchAll( PDO::FETCH_ASSOC );
 print_r($rows[0]); echo "<br><br>";

@@ -36,7 +36,7 @@
 			exit($infor[2]);
 	}
 	
-	header("Location: ../../index2017evt_mod-n.php");
+	header("Location: ../../index2018evt_mod-n.php");
 	exit();
          
 ?>

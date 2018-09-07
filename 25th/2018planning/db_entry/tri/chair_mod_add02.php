@@ -36,7 +36,7 @@
 			exit($infor[2]);
 	}
 	
-	header("Location: ../../index2017tri_mod-n.php");
+	header("Location: ../../index2018tri_mod-n.php");
 	exit();
          
 ?>
