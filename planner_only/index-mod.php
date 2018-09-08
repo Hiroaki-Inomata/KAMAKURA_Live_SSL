@@ -340,6 +340,7 @@ a.pay {
 						<a class="btn btn-info btn-sm" role="button" href="25th/db_read/come_session_all_read.php">コメコメ(16日)</a>
 						<a class="btn btn-danger btn-sm" role="button" href="25th/oct_training/index.php">OCT/FFRトレーニング・センター</a>
 -->
+						<a class="btn btn-info btn-sm" role="button" href="../25th/2018planning/db_entry/tri/tri_db_input.php">TRI時間割決定</a>
 						<a class="btn btn-success btn-sm" role="button" href="#">TRIライブ(15日)</a>
 						<a class="btn btn-default btn-sm" href="../25th/db_read/zagaku_all_read.php">インタベ座学確認</a>
 						<a class="btn btn-default btn-sm" href="../25th/2018planning/index2018evt_mod-n.php">!!インタベ座学修正!!</a>

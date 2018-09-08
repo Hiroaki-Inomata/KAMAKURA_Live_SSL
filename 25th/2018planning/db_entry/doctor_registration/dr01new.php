@@ -37,7 +37,7 @@
   <div class=" col-lg-10">
     <h1>FacultyI入力・修正フォーム</h1>
     <div class="row">
-      <form name="doctor" method="post" action="../../../2017planning/db_entry/doctor_registration/dr02new.php">
+      <form name="doctor" method="post" action="../../../2018planning/db_entry/doctor_registration/dr02new.php">
         <input type="hidden" name="id" value="<?=_Q($row['id']); ?>" />
         <input type="hidden" name="new_old" value="<?=_Q($_POST['new_old']); ?>" />
         <div class="form-group">
@@ -131,7 +131,7 @@
     </div>
     <hr>
     <footer>
-      <p>&copy;  2013 - 2017 by NPO International TRI Network & KAMAKURA LIVE</p>
+      <p>&copy;  2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
     </footer>
   </div>
 </div>

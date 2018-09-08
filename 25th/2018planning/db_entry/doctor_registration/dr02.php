@@ -185,7 +185,7 @@
 	p {font-size:24px; color:white; text-align:center;font-weight:bold;}
 	div#pict {width:736px; margin-left:auto; margin-right:auto;}
 </style>
-<title>RAP and BEAT</title>
+<title>KAMAKURA Live</title>
 </head>
 
 <body>

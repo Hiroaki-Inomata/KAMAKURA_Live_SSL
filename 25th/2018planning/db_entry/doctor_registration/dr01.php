@@ -160,7 +160,7 @@
     </div>
     <hr>
     <footer>
-      <p>&copy;  2013 - 2016 by NPO International TRI Network & KAMAKURA LIVE</p>
+      <p>&copy;  2013 - 2018 by NPO International TRI Network & KAMAKURA LIVE</p>
     </footer>
   </div>
 </div>
